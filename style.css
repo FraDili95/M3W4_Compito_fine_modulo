@@ -3,8 +3,11 @@
 -------------------------------*/
 body{
 background-color: #141414;
+overflow-x: hidden; /*per le card*/
 }
 /*-------FINE BODY-----------*/
+
+
 .a-nowrap {
     white-space: nowrap;
 }
@@ -265,8 +268,8 @@ main .offcanvas{
     /*Elemento dei 2 quadrati a dx*/
     .element_stranger{
         height: 2.5em;
-        width: 4em;
-        border: 1px solid #fff;
+        min-width: 5em;
+        border: 1px solid #CCCCCC;
     }
     
 
@@ -288,9 +291,44 @@ main .offcanvas{
         font-size: 1.5em;
     }
 
+
 } 
 
-section{
-    max-width: 100vw;
-    overflow-x: hidden;
-}
+  .card-film img {
+    max-width: 100%; /* Imposta una larghezza massima del 100% per le immagini */
+    height: auto; /* Imposta l'altezza automaticamente per mantenere le proporzioni originali */
+  }
+ 
+  h3{
+    padding-left: 0.5em;
+  }
+
+  .card-film{
+    padding: 0 0.09em;
+  }
+
+  .card-film:hover{
+    cursor: pointer;
+    scale: 1.03;
+  }
+
+  .functional_dx{/*stile pulsate dx(funziona anche da ombra)*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 20%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+  }
+  
+  .functional_sx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 20%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+  }
+ 
