@@ -5,11 +5,16 @@ body{
 background-color: #141414;
 }
 /*-------FINE BODY-----------*/
+.a-nowrap {
+    white-space: nowrap;
+}
+
 
 #bar_mum{
     background-color: #141414;
     min-height: 7.5vh;
 }
+
 /*-------------------------------
       COMPONENTI--NAVBAR
 -------------------------------*/
@@ -259,9 +264,8 @@ main .offcanvas{
     }
     /*Elemento dei 2 quadrati a dx*/
     .element_stranger{
-        margin-right: 6em;
         height: 2.5em;
-        width: 5em;
+        width: 4em;
         border: 1px solid #fff;
     }
     
@@ -285,3 +289,8 @@ main .offcanvas{
     }
 
 } 
+
+section{
+    max-width: 100vw;
+    overflow-x: hidden;
+}
